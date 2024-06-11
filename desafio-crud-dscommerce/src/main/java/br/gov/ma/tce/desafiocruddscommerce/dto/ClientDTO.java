@@ -21,7 +21,7 @@ public class ClientDTO{
     @Positive(message = "A renda precisa ser positiva")
     private Double income;
     @NotNull(message = "Campo requerido")
-    @Past
+    @PastOrPresent
     private LocalDate birthDate;
     @NotNull(message = "Campo requerido")
     private Integer children;
